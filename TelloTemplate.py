@@ -64,6 +64,10 @@ try:
         sendmsg('ccw 175', 10)
         sendmsg('forward 280', 10)
         sendmsg('go 200 10 -95 40', 10)
+        sendmsg('forward 100', 10)
+        sendmsg('ccw 360')
+        sendmsg('forward 40')
+        sendmsg('land')
 
         # Review the (SDK) Software Development Kit resource for Drone Commands
         # Delete these comments before writing your program
