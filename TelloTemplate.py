@@ -60,6 +60,10 @@ try:
         sendmsg('takeoff', 10)
         sendmsg('forward 230', 10)
         sendmsg('go 180 0 57 40', 10)
+        sendmsg('curve 120 150 0 180 270 0 30', 10)
+        sendmsg('ccw 175', 10)
+        sendmsg('forward 280', 10)
+        sendmsg('go 200 10 -95 40', 10)
 
         # Review the (SDK) Software Development Kit resource for Drone Commands
         # Delete these comments before writing your program
