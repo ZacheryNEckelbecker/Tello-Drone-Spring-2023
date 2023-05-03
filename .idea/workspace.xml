@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201d40fc-f4de-49fb-a52d-54781a5d71d9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TelloTemplate.py" beforeDir="false" afterPath="$PROJECT_DIR$/TelloTemplate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

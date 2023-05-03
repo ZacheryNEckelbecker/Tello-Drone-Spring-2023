@@ -30,7 +30,7 @@ def recv():
             break
 
 
-def sendmsg(msg, sleep = 6):
+def sendmsg(msg, sleep = 8):
     print("Sending: " + msg)
     msg = msg.encode(encoding="utf-8")
     sock.sendto(msg, tello_address)
@@ -44,34 +44,29 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nFirst & Last Names")
-print("Program Name: ")
-print("Date: ")
+print("\nBrayden Scheffers"
+      "\nPartner(s): Grayson Nichols ")
+print("Program Name: Competition")
+print("Date: 24.2.2023")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
 
 
 try:
-    if ready.lower() == 'y':
+    if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
         sendmsg('takeoff', 10)
-        sendmsg('forward 230', 10)
-        sendmsg('go 180 0 57 40', 10)
-        sendmsg('curve 120 150 0 180 270 0 30', 10)
-        sendmsg('ccw 175', 10)
-        sendmsg('forward 280', 10)
-        sendmsg('go 200 10 -95 40', 10)
+        sendmsg('up 20', 10)
+        sendmsg('forward 250', 10)
+        sendmsg('go 100 0 50 60', 10)
+        sendmsg('curve 110 120 0 120 220 0 30', 10)
+        sendmsg('ccw 180', 10)
+        sendmsg('forward 140', 10)
+        sendmsg('go 160 20 -50 60', 10)
         sendmsg('forward 100', 10)
-        sendmsg('ccw 360')
-        sendmsg('forward 40')
-        sendmsg('land')
-
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
-
         sendmsg('land')
 
         print('\nGreat Flight!!!')
